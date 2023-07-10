@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external방식 -->
+    <script>
+
+        //변수의 스코프(scope) ==> 변수를 인식할 수 있는 범위
+
+        // 블럭{}을 가진 요소 : 함수, if문, 반복문, 클래스, . . .
+        
+        if(true){
+            var n=10;
+            let n2=20;
+            console.log("블럭 안",n);
+            console.log("블럭 밖",n2); //블럭 안에서 선언된 변수는 블럭 안에서만 쓸수 있음
+        }
+        console.log("블럭 안",n);
+        // console.log("블럭 밖",n2); //에러 발생
+        
+        function fun(){
+            var x=100;
+            let x2=200;
+            console.log("함수 블럭 안",x);
+            console.log("함수 블럭 밖",x2);
+        }
+        // console.log("함수 블럭 안",x);
+        //console.log("함수 블럭 밖",x2);
+        fun(); //함수호출
+
+        // var변수는 중복선언 가능
+        var n=10;
+        var n=20;
+
+        // let변수는 중복선언 불가능
+        // let z=20;
+        // let z=30; -> 에러남
+
+    </script>
+</head>
+
+<body>
+    
+    <p>안녕하세요</p>
+    
+</body>
+
+</html>

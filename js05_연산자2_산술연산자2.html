@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+
+        // 연산자 2 -산술연산자
+        // 문자열 vs 수치 : 더하기를 제외한 나머지 연산자들은 계산, 더하기는 연결로 처리
+        
+        let n="10";
+        let n2=3;
+        console.log(n-n2); // 7
+        console.log(n*n2); // 30
+        console.log(n/n2); // 3.3333333333333335
+        console.log(n%n2); // 1
+        console.log(n+n2); // 103 문자열+수치 = 연결 후 문자열로 반환(a+n=an)
+
+        // 문자열과 문자열(비문자열)의 +연산은 연결되어 문자열로 반환
+        
+        let x="3d2y"+"nakama";
+        let x2="3d2y"+10+20; // 문자열 뒤 + 가 오면 뒤에 오는 +도 연결로 처리
+        let x2p="3d2y"+(10+20); // ()안의 계산이 먼저 처리되고 + 연결 처리
+        let x3=10+20+"3d2y";
+        console.log(x);
+        console.log(x2);
+        console.log(x2p);
+        console.log(x3);
+
+        //문자열 상태의 정수를 정수로 바꾸기
+        console.log("10"+3); // 103 string
+        console.log (Number.parseInt("10")+3); // 13 'number'
+        
+        let num=Number.parseInt("10");
+        console.log(num+3); // 13 'number'
+
+        console.log (parseInt("10")+3); // 13 'number'
+        
+        console.log (Number.parseInt("a")) // NaN
+
+        /*
+            undefined : 변수를 선언만 한 경우 (초기화 안된경우 0)
+            null      : 명시적으로 변수에 값 없음을 표시할 때
+            NaN       : Not a Number, Number.parseInt(숫자로 변경못하는 값);
+        */
+
+    </script>
+</head>
+
+<body>
+    
+    <p>안녕하세요</p>
+    
+</body>
+
+</html>

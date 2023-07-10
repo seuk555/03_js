@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        /*
+        이벤트 타입                이벤트 핸들러
+        button,checkbox : click     onclick
+        form태그의 submit : submit  onsubmit (중요하다)
+        input : focus, keyup        onfocus, onkeyup
+        select : change             onchange
+        image : mouseover,mouseout  onmouseover/out
+        */
+
+        function fun(){
+            console.log("fun",event);
+        }
+
+        
+        
+
+    </script>
+</head>
+
+<body>
+    
+    
+    <button onclick="fun()">ok</button>
+    <input type="text" onkeyup="fun()" onfocus="fun()"><br>
+
+    <select id="cars" name="cars" onchange="fun()">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select><br>
+
+    <input type="checkbox" onclick="fun()" name=fruit value="사과" checked="checked">사과
+    <input type="checkbox" onclick="fun()" name="fruit" value="바나나" checked>바나나
+    <input type="checkbox" name="fruit" value="메론">메론 <br>
+
+    <img src="images/001.png" width="100" height="100" onmouseover="fun()" onmouseout="fun()">
+
+    
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+
+        /*
+             모든 반복문의 3가지 요소
+               - 초기값(시작값)
+               - 조건식
+               - 증감식
+        */
+        // 실행문 > 반복문 > for문 -> 조건식이 f라면 단 한번도 실행되지 않음
+        // 1. 기본형***
+        for(var n=1;n<6;n++){
+            console.log("hello");
+        }
+        
+        console.log("end");
+
+        // 2. 특화된 코드
+        for(var n=5;n>0;n--){
+            console.log("world");
+        }
+        
+        for(var n=1;n<10;n+=2){
+            console.log("world2");
+        }
+
+        for(var n=1,n2=1;n<10&&n2<3;n+=2,n++){
+            console.log("world3");
+        }
+
+        //중첩
+        for(var n=1;n<6;n++){
+            for(var n2=1;n2<3;n2++)
+            console.log("world4");
+        }
+        
+    </script>
+</head>
+
+<body>
+    
+    <p>안녕하세요</p>
+    
+</body>
+
+</html>
